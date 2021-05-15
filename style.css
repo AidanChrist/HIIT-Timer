@@ -1,0 +1,35 @@
+body{
+  font-family: 'Comic Neue', cursive;
+}
+
+#home{
+  text-align: center;
+}
+
+#timer{
+  text-align: center;
+  display: none;
+}
+
+#edit{
+  text-align: center;
+  
+  display: none;
+}
+
+#prompt{
+  display: none;
+  
+  border: solid black;
+}
+
+.bruhton{
+  font-family: 'Comic Neue', cursive;
+  border: solid black;
+  background-color: #eee;
+  font-size: 5em;
+}
+
+div{
+  
+}
