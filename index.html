@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>HIIT</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- the wrapper and content divs set margins and positioning -->
+    <div id="home">
+      
+      <button class="bruhton" onclick="startWorkout()">Start Workout</button>
+      <br>
+      <br>
+      <button class="bruhton" onclick="changeWorkout()">Change Workout</button>
+      <div id="workout"><br><br><br><u>Current Workout</u><br><br><br>...</div>
+      
+    </div>
+    <div id="timer">
+      
+      <button class="bruhton" onclick="back('timer')">Stop</button>
+      <button class="bruhton" id="pause">Pause</button>
+      <button class="bruhton" id="play">Continue</button>
+      
+      
+      <div id="currentInterval"></div>
+      <div id="currentTime"></div>
+      <button class="bruhton" onclick="startWorkout()">Start Workout</button>
+      
+    </div>
+    <div id="edit">
+      
+      <div id="prompt"></div>
+      
+      <button class="bruhton" onclick="addInterval()">Add Interval</button>
+      <button class="bruhton" onclick="remove()">Remove Workout</button>
+      <button class="bruhton" onclick="back('edit')">Back</button>
+      <p>Times: </p>
+      <button class="bruhton" onclick="repeat()">+</button>
+      <button class="bruhton" onclick="nopeat()">-</button>
+      
+      <div id="currentWorkout"></div>
+      
+      
+    </div>
+  </body>
+</html>
